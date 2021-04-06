@@ -8,9 +8,9 @@
     <script type ="module" src="cmp/mi-footer.js"></script>
      </head>
      <body>
-     <form id="formSaludo">
-     <h1>Saludo</h1>
-     <p>
+          <form id="formSaludo">
+              <h1>Saludo</h1>
+              <p>
       <label>
       Nombre
       <input type="text" name="nombre">
@@ -31,7 +31,7 @@
       const saludo = ctrlSaludo.caluclaSaludo(nombre);
       formSaludo.salida.value = saludo;
       } catch (error) {
-      concole.log(error);
+      console.log(error);
       formSaludo.salida.value = error.message;
       }
       });
